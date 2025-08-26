@@ -9,7 +9,7 @@ export default function LoadingScreen() {
     if (visibleLetters < text.length) {
       const letterTimer = setTimeout(() => {
         setVisibleLetters(visibleLetters + 1);
-      }, 200); // delay between letters
+      }, 300); // delay between letters
       return () => clearTimeout(letterTimer);
     }
   }, [visibleLetters, text.length]);
